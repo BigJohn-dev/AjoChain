@@ -1,0 +1,17 @@
+[package]
+name = "ajo-pool"
+version = "0.1.0"
+edition = "2021"
+description = "AjoChain core ROSCA savings pool — lifecycle, contributions, and payouts"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+doctest = false
+
+[dependencies]
+soroban-sdk = { workspace = true }
+ajo-types = { workspace = true }
+
+[dev-dependencies]
+soroban-sdk = { workspace = true, features = ["testutils"] }

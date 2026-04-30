@@ -1,0 +1,17 @@
+[package]
+name = "ajo-governance"
+version = "0.1.0"
+edition = "2021"
+description = "AjoChain governance — proposals, voting, timelock, and emergency controls"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+doctest = false
+
+[dependencies]
+soroban-sdk = { workspace = true }
+ajo-types = { workspace = true }
+
+[dev-dependencies]
+soroban-sdk = { workspace = true, features = ["testutils"] }

@@ -1,0 +1,29 @@
+# Rust build artifacts
+/target/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node (frontend)
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+
+# Go (backend)
+backend/bin/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log

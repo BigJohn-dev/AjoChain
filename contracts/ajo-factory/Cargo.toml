@@ -1,0 +1,17 @@
+[package]
+name = "ajo-factory"
+version = "0.1.0"
+edition = "2021"
+description = "AjoChain pool factory — deploys and registers new savings circles"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+doctest = false
+
+[dependencies]
+soroban-sdk = { workspace = true }
+ajo-types = { workspace = true }
+
+[dev-dependencies]
+soroban-sdk = { workspace = true, features = ["testutils"] }
